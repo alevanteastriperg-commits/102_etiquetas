@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>102 Etiquetas HTML - Versión Sencilla</title>
+  <style>
+    body{font-family:Arial, sans-serif;background:#f9f9f9;color:#222;margin:18px}
+    h1{text-align:center;color:#111}
+    table{width:100%;border-collapse:collapse;margin-top:18px}
+    th,td{border:1px solid #ddd;padding:8px;font-size:14px}
+    th{background:#333;color:#fff}
+    tr:nth-child(even){background:#fff}
+    tr:nth-child(odd){background:#f6f6f6}
+    code{background:#efefef;padding:4px;border-radius:4px;display:inline-block}
+    @media (max-width:800px){table, thead, tbody, th, td, tr{display:block} th{display:none} td{border:none;padding:8px 0} td::before{font-weight:600;display:block}}
+  </style>
+</head>
+<body>
+  <h1>102 Etiquetas HTML</h1>
+  <table>
+    <tr><th>N°</th><th>Etiqueta</th><th>Descripción</th><th>Ejemplo</th></tr>
+    <tr><td>1</td><td>&lt;a&gt;</td><td>Enlace a otra página o recurso.</td><td><code>&lt;a href="https://ejemplo.com"&gt;Ir&lt;/a&gt;</code></td></tr>
+    <tr><td>2</td><td>&lt;abbr&gt;</td><td>Abreviatura con título explicativo.</td><td><code>&lt;abbr title="Organización Mundial de la Salud"&gt;OMS&lt;/abbr&gt;</code></td></tr>
+    <tr><td>3</td><td>&lt;address&gt;</td><td>Datos de contacto/ubicación.</td><td><code>&lt;address&gt;Calle 1, Ciudad&lt;/address&gt;</code></td></tr>
+    <tr><td>4</td><td>&lt;area&gt;</td><td>Zona clicable dentro de una imagen mapa.</td><td><code>&lt;area shape="rect" coords="0,0,100,100" href="#"&gt;</code></td></tr>
+    <tr><td>5</td><td>&lt;article&gt;</td><td>Contenido independiente (artículo/post).</td><td><code>&lt;article&gt;&lt;h2&gt;Título&lt;/h2&gt;&lt;/article&gt;</code></td></tr>
+    <tr><td>6</td><td>&lt;aside&gt;</td><td>Contenido relacionado, suele ser una barra lateral.</td><td><code>&lt;aside&gt;Nota&lt;/aside&gt;</code></td></tr>
+    <tr><td>7</td><td>&lt;audio&gt;</td><td>Reproductor de audio.</td><td><code>&lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;</code></td></tr>
+    <tr><td>8</td><td>&lt;b&gt;</td><td>Texto en negrita (sin significado fuerte).</td><td><code>&lt;b&gt;Texto&lt;/b&gt;</code></td></tr>
+    <tr><td>9</td><td>&lt;base&gt;</td><td>URL base para enlaces relativos.</td><td><code>&lt;base href="https://ejemplo.com/"&gt;</code></td></tr>
+    <tr><td>10</td><td>&lt;bdi&gt;</td><td>Aísla texto con direcciones mixtas (RTL/LTR).</td><td><code>&lt;bdi&gt;Nombre&lt;/bdi&gt;</code></td></tr>
+    <tr><td>11</td><td>&lt;bdo&gt;</td><td>Forzar dirección de texto (dir).</td><td><code>&lt;bdo dir="rtl"&gt;Texto&lt;/bdo&gt;</code></td></tr>
+    <tr><td>12</td><td>&lt;blockquote&gt;</td><td>Cita en bloque.</td><td><code>&lt;blockquote&gt;Cita larga&lt;/blockquote&gt;</code></td></tr>
+    <tr><td>13</td><td>&lt;body&gt;</td><td>Contenido visible de la página.</td><td><code>&lt;body&gt;...&lt;/body&gt;</code></td></tr>
+    <tr><td>14</td><td>&lt;br&gt;</td><td>Salto de línea.</td><td><code&gt;Línea1&lt;br&gt;Línea2</code></td></tr>
+    <tr><td>15</td><td>&lt;button&gt;</td><td>Botón interactivo.</td><td><code>&lt;button&gt;Clic&lt;/button&gt;</code></td></tr>
+    <tr><td>16</td><td>&lt;canvas&gt;</td><td>Área drawable con JavaScript.</td><td><code>&lt;canvas width="200" height="100"&gt;&lt;/canvas&gt;</code></td></tr>
+    <tr><td>17</td><td>&lt;caption&gt;</td><td>Título de una tabla.</td><td><code>&lt;table&gt;&lt;caption&gt;Ventas&lt;/caption&gt;&lt;/table&gt;</code></td></tr>
+    <tr><td>18</td><td>&lt;cite&gt;</td><td>Título de una obra o fuente.</td><td><code>&lt;cite&gt;Libro&lt;/cite&gt;</code></td></tr>
+    <tr><td>19</td><td>&lt;code&gt;</td><td>Fragmento de código.</td><td><code>&lt;code&gt;let x=1;&lt;/code&gt;</code></td></tr>
+    <tr><td>20</td><td>&lt;col&gt;</td><td>Define una columna en tablas.</td><td><code>&lt;col style="width:50%"&gt;</code></td></tr>
+    <tr><td>21</td><td>&lt;colgroup&gt;</td><td>Agrupa columnas en una tabla.</td><td><code>&lt;colgroup&gt;&lt;col&gt;&lt;/colgroup&gt;</code></td></tr>
+    <tr><td>22</td><td>&lt;data&gt;</td><td>Asocia texto con un valor legible por máquina.</td><td><code>&lt;data value="20250917"&gt;17 sep 2025&lt;/data&gt;</code></td></tr>
+    <tr><td>23</td><td>&lt;datalist&gt;</td><td>Opciones sugeridas para un input.</td><td><code>&lt;input list="op"&gt;&lt;datalist id="op"&gt;&lt;option value="A"&gt;&lt;/datalist&gt;</code></td></tr>
+    <tr><td>24</td><td>&lt;dd&gt;</td><td>Descripción dentro de &lt;dl&gt;.</td><td><code>&lt;dl&gt;&lt;dt&gt;HTML&lt;/dt&gt;&lt;dd&gt;Lenguaje&lt;/dd&gt;&lt;/dl&gt;</code></td></tr>
+    <tr><td>25</td><td>&lt;del&gt;</td><td>Texto eliminado (tachado semántico).</td><td><code>&lt;del&gt;Antes&lt;/del&gt;</code></td></tr>
+    <tr><td>26</td><td>&lt;details&gt;</td><td>Área desplegable nativa.</td><td><code>&lt;details&gt;&lt;summary&gt;Abrir&lt;/summary&gt;&lt;p&gt;Contenido&lt;/p&gt;&lt;/details&gt;</code></td></tr>
+    <tr><td>27</td><td>&lt;dfn&gt;</td><td>Define un término por primera vez.</td><td><code>&lt;dfn&gt;API&lt;/dfn&gt;</code></td></tr>
+    <tr><td>28</td><td>&lt;dialog&gt;</td><td>Ventana modal o diálogo nativo.</td><td><code>&lt;dialog&gt;Hola&lt;/dialog&gt;</code></td></tr>
+    <tr><td>29</td><td>&lt;div&gt;</td><td>Contenedor genérico de bloque.</td><td><code>&lt;div&gt;Caja&lt;/div&gt;</code></td></tr>
+    <tr><td>30</td><td>&lt;dl&gt;</td><td>Lista de definiciones (dt + dd).</td><td><code>&lt;dl&gt;...&lt;/dl&gt;</code></td></tr>
+    <tr><td>31</td><td>&lt;dt&gt;</td><td>Término dentro de &lt;dl&gt;.</td><td><code>&lt;dt&gt;CPU&lt;/dt&gt;</code></td></tr>
+    <tr><td>32</td><td>&lt;em&gt;</td><td>Énfasis (cursiva semántica).</td><td><code>&lt;em&gt;Importante&lt;/em&gt;</code></td></tr>
+    <tr><td>33</td><td>&lt;embed&gt;</td><td>Inserta contenido externo (PDF, plugin).</td><td><code>&lt;embed src="doc.pdf" type="application/pdf"&gt;</code></td></tr>
+    <tr><td>34</td><td>&lt;fieldset&gt;</td><td>Agrupa controles en formularios.</td><td><code>&lt;fieldset&gt;&lt;legend&gt;Datos&lt;/legend&gt;&lt;/fieldset&gt;</code></td></tr>
+    <tr><td>35</td><td>&lt;figcaption&gt;</td><td>Leyenda de una figura.</td><td><code>&lt;figcaption&gt;Pie de imagen&lt;/figcaption&gt;</code></td></tr>
+    <tr><td>36</td><td>&lt;figure&gt;</td><td>Contenedor para imagen y su caption.</td><td><code>&lt;figure&gt;&lt;img src="img.jpg" alt=""&gt;&lt;/figure&gt;</code></td></tr>
+    <tr><td>37</td><td>&lt;footer&gt;</td><td>Pie de página o sección.</td><td><code>&lt;footer&gt;© 2025&lt;/footer&gt;</code></td></tr>
+    <tr><td>38</td><td>&lt;form&gt;</td><td>Formulario para enviar datos.</td><td><code>&lt;form action="/" method="post"&gt;&lt;/form&gt;</code></td></tr>
+    <tr><td>39</td><td>&lt;h1&gt;</td><td>Encabezado principal.</td><td><code>&lt;h1&gt;Título&lt;/h1&gt;</code></td></tr>
+    <tr><td>40</td><td>&lt;h2&gt;</td><td>Encabezado de sección.</td><td><code>&lt;h2&gt;Sección&lt;/h2&gt;</code></td></tr>
+    <tr><td>41</td><td>&lt;h3&gt;</td><td>Sub-encabezado.</td><td><code>&lt;h3&gt;Subtitulo&lt;/h3&gt;</code></td></tr>
+    <tr><td>42</td><td>&lt;h4&gt;</td><td>Encabezado menor.</td><td><code>&lt;h4&gt;Tema&lt;/h4&gt;</code></td></tr>
+    <tr><td>43</td><td>&lt;h5&gt;</td><td>Encabezado pequeño.</td><td><code>&lt;h5&gt;Nota&lt;/h5&gt;</code></td></tr>
+    <tr><td>44</td><td>&lt;h6&gt;</td><td>Encabezado menos importante.</td><td><code>&lt;h6&gt;Pequeño&lt;/h6&gt;</code></td></tr>
+    <tr><td>45</td><td>&lt;head&gt;</td><td>Metadatos y enlaces del documento.</td><td><code>&lt;head&gt;&lt;title&gt;Título&lt;/title&gt;&lt;/head&gt;</code></td></tr>
+    <tr><td>46</td><td>&lt;header&gt;</td><td>Cabecera de la página o sección.</td><td><code>&lt;header&gt;Logo&lt;/header&gt;</code></td></tr>
+    <tr><td>47</td><td>&lt;hr&gt;</td><td>Línea separadora temática.</td><td><code>&lt;hr&gt;</code></td></tr>
+    <tr><td>48</td><td>&lt;html&gt;</td><td>Elemento raíz del documento HTML.</td><td><code>&lt;html lang="es"&gt;...&lt;/html&gt;</code></td></tr>
+    <tr><td>49</td><td>&lt;i&gt;</td><td>Texto en cursiva (tono alternativo).</td><td><code>&lt;i&gt;palabra&lt;/i&gt;</code></td></tr>
+    <tr><td>50</td><td>&lt;iframe&gt;</td><td>Marco embebido que carga otra página.</td><td><code>&lt;iframe src="https://ejemplo.com"&gt;&lt;/iframe&gt;</code></td></tr>
+    <tr><td>51</td><td>&lt;img&gt;</td><td>Muestra una imagen (src, alt).</td><td><code>&lt;img src="foto.jpg" alt="Descripción"&gt;</code></td></tr>
+    <tr><td>52</td><td>&lt;input&gt;</td><td>Control de entrada en formularios.</td><td><code>&lt;input type="text" name="nombre"&gt;</code></td></tr>
+    <tr><td>53</td><td>&lt;ins&gt;</td><td>Texto insertado (subrayado semántico).</td><td><code>&lt;ins&gt;nuevo&lt;/ins&gt;</code></td></tr>
+    <tr><td>54</td><td>&lt;kbd&gt;</td><td>Representa teclas o combinaciones.</td><td><code>&lt;kbd&gt;Ctrl&lt;/kbd&gt;</code></td></tr>
+    <tr><td>55</td><td>&lt;label&gt;</td><td>Etiqueta asociada a un control.</td><td><code>&lt;label for="e"&gt;Email&lt;/label&gt;</code></td></tr>
+    <tr><td>56</td><td>&lt;legend&gt;</td><td>Título de un fieldset.</td><td><code>&lt;legend&gt;Contacto&lt;/legend&gt;</code></td></tr>
+    <tr><td>57</td><td>&lt;li&gt;</td><td>Elemento de una lista (&lt;ul&gt; o &lt;ol&gt;).</td><td><code>&lt;li&gt;Item&lt;/li&gt;</code></td></tr>
+    <tr><td>58</td><td>&lt;link&gt;</td><td>Enlaza recursos (CSS, iconos).</td><td><code>&lt;link rel="stylesheet" href="estilos.css"&gt;</code></td></tr>
+    <tr><td>59</td><td>&lt;main&gt;</td><td>Contenido principal de la página (único).</td><td><code>&lt;main&gt;Contenido&lt;/main&gt;</code></td></tr>
+    <tr><td>60</td><td>&lt;map&gt;</td><td>Mapa de imagen que contiene &lt;area&gt;.</td><td><code>&lt;map name="mapa"&gt;...&lt;/map&gt;</code></td></tr>
+    <tr><td>61</td><td>&lt;mark&gt;</td><td>Resalta texto como importante.</td><td><code>&lt;mark&gt;Importante&lt;/mark&gt;</code></td></tr>
+    <tr><td>62</td><td>&lt;meta&gt;</td><td>Metadatos (charset, viewport, description).</td><td><code>&lt;meta name="viewport" content="width=device-width"&gt;</code></td></tr>
+    <tr><td>63</td><td>&lt;meter&gt;</td><td>Valor dentro de un rango (medidor).</td><td><code>&lt;meter value="3" min="0" max="5"&gt;</code></td></tr>
+    <tr><td>64</td><td>&lt;nav&gt;</td><td>Enlaces de navegación del sitio.</td><td><code>&lt;nav&gt;&lt;a href="/"&gt;Inicio&lt;/a&gt;&lt;/nav&gt;</code></td></tr>
+    <tr><td>65</td><td>&lt;noscript&gt;</td><td>Contenido mostrado si JavaScript está desactivado.</td><td><code>&lt;noscript&gt;Activa JS&lt;/noscript&gt;</code></td></tr>
+    <tr><td>66</td><td>&lt;object&gt;</td><td>Inserta recursos externos con fallback.</td><td><code>&lt;object data="doc.pdf"&gt;Fallback&lt;/object&gt;</code></td></tr>
+    <tr><td>67</td><td>&lt;ol&gt;</td><td>Lista ordenada (numerada).</td><td><code>&lt;ol&gt;&lt;li&gt;Uno&lt;/li&gt;&lt;/ol&gt;</code></td></tr>
+    <tr><td>68</td><td>&lt;optgroup&gt;</td><td>Agrupa opciones dentro de un select.</td><td><code>&lt;optgroup label="Grupo"&gt;&lt;option&gt;A&lt;/option&gt;&lt;/optgroup&gt;</code></td></tr>
+    <tr><td>69</td><td>&lt;option&gt;</td><td>Opción dentro de select o datalist.</td><td><code>&lt;option value="1"&gt;Uno&lt;/option&gt;</code></td></tr>
+    <tr><td>70</td><td>&lt;output&gt;</td><td>Resultado de un cálculo o formulario.</td><td><code>&lt;output name="res"&gt;0&lt;/output&gt;</code></td></tr>
+    <tr><td>71</td><td>&lt;p&gt;</td><td>Párrafo de texto.</td><td><code>&lt;p&gt;Texto&lt;/p&gt;</code></td></tr>
+    <tr><td>72</td><td>&lt;param&gt;</td><td>Parámetro para &lt;object&gt;.</td><td><code>&lt;param name="autoplay" value="true"&gt;</code></td></tr>
+    <tr><td>73</td><td>&lt;picture&gt;</td><td>Imágenes responsivas con &lt;source&gt;.</td><td><code>&lt;picture&gt;&lt;img src="img.jpg" alt=""&gt;&lt;/picture&gt;</code></td></tr>
+    <tr><td>74</td><td>&lt;pre&gt;</td><td>Texto preformateado (preserva espacios).</td><td><code>&lt;pre&gt;Texto
+Formato&lt;/pre&gt;</code></td></tr>
+    <tr><td>75</td><td>&lt;progress&gt;</td><td>Barra de progreso.</td><td><code>&lt;progress value="70" max="100"&gt;</code></td></tr>
+    <tr><td>76</td><td>&lt;q&gt;</td><td>Cita corta en línea.</td><td><code>&lt;q&gt;hola&lt;/q&gt;</code></td></tr>
+    <tr><td>77</td><td>&lt;rp&gt;</td><td>Paréntesis de reserva para &lt;ruby&gt; en navegadores viejos.</td><td><code>&lt;rp&gt;(&lt;/rp&gt;</code></td></tr>
+    <tr><td>78</td><td>&lt;rt&gt;</td><td>Texto de pronunciación para &lt;ruby&gt;.</td><td><code>&lt;rt&gt;furigana&lt;/rt&gt;</code></td></tr>
+    <tr><td>79</td><td>&lt;ruby&gt;</td><td>Anotaciones para caracteres (furigana).</td><td><code>&lt;ruby&gt;語&lt;rt&gt;go&lt;/rt&gt;&lt;/ruby&gt;</code></td></tr>
+    <tr><td>80</td><td>&lt;s&gt;</td><td>Texto que ya no es correcto (tachado).</td><td><code>&lt;s&gt;Obsoleto&lt;/s&gt;</code></td></tr>
+    <tr><td>81</td><td>&lt;samp&gt;</td><td>Salida de programa (texto monoespaciado).</td><td><code>&lt;samp&gt;OK&lt;/samp&gt;</code></td></tr>
+    <tr><td>82</td><td>&lt;script&gt;</td><td>Inserta o enlaza JavaScript.</td><td><code>&lt;script src="app.js" defer&gt;&lt;/script&gt;</code></td></tr>
+    <tr><td>83</td><td>&lt;section&gt;</td><td>Sección temática del contenido.</td><td><code>&lt;section&gt;&lt;h2&gt;Sección&lt;/h2&gt;&lt;/section&gt;</code></td></tr>
+    <tr><td>84</td><td>&lt;select&gt;</td><td>Desplegable para seleccionar opciones.</td><td><code>&lt;select&gt;&lt;option&gt;A&lt;/option&gt;&lt;/select&gt;</code></td></tr>
+    <tr><td>85</td><td>&lt;small&gt;</td><td>Texto pequeño (notas, disclaimers).</td><td><code>&lt;small&gt;Nota&lt;/small&gt;</code></td></tr>
+    <tr><td>86</td><td>&lt;source&gt;</td><td>Fuente para audio/video o picture.</td><td><code>&lt;source src="vid.mp4" type="video/mp4"&gt;</code></td></tr>
+    <tr><td>87</td><td>&lt;span&gt;</td><td>Contenedor en línea para aplicar estilos.</td><td><code>&lt;span&gt;Texto&lt;/span&gt;</code></td></tr>
+    <tr><td>88</td><td>&lt;strong&gt;</td><td>Texto con importancia (negrita semántica).</td><td><code>&lt;strong&gt;Importante&lt;/strong&gt;</code></td></tr>
+    <tr><td>89</td><td>&lt;style&gt;</td><td>Estilos CSS embebidos.</td><td><code>&lt;style&gt;body{font-family:Arial}&lt;/style&gt;</code></td></tr>
+    <tr><td>90</td><td>&lt;sub&gt;</td><td>Subíndice.</td><td><code>&lt;sub&gt;2&lt;/sub&gt;</code></td></tr>
+    <tr><td>91</td><td>&lt;summary&gt;</td><td>Resumen visible para &lt;details&gt;.</td><td><code>&lt;summary&gt;Ver&lt;/summary&gt;</code></td></tr>
+    <tr><td>92</td><td>&lt;sup&gt;</td><td>Superíndice.</td><td><code>&lt;sup&gt;2&lt;/sup&gt;</code></td></tr>
+    <tr><td>93</td><td>&lt;table&gt;</td><td>Tabla de datos.</td><td><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td></tr>
+    <tr><td>94</td><td>&lt;tbody&gt;</td><td>Cuerpo principal de la tabla.</td><td><code>&lt;tbody&gt;...&lt;/tbody&gt;</code></td></tr>
+    <tr><td>95</td><td>&lt;td&gt;</td><td>Celda de datos en una fila de tabla.</td><td><code>&lt;td&gt;Valor&lt;/td&gt;</code></td></tr>
+    <tr><td>96</td><td>&lt;template&gt;</td><td>Plantilla inactiva para clonar con JS.</td><td><code>&lt;template&gt;&lt;div&gt;Plantilla&lt;/div&gt;&lt;/template&gt;</code></td></tr>
+    <tr><td>97</td><td>&lt;textarea&gt;</td><td>Área de texto multilinea.</td><td><code>&lt;textarea&gt;Escribe...&lt;/textarea&gt;</code></td></tr>
+    <tr><td>98</td><td>&lt;tfoot&gt;</td><td>Pie de la tabla (totales o resumen).</td><td><code>&lt;tfoot&gt;...&lt;/tfoot&gt;</code></td></tr>
+    <tr><td>99</td><td>&lt;th&gt;</td><td>Encabezado de celda en una tabla.</td><td><code>&lt;th&gt;Título&lt;/th&gt;</code></td></tr>
+    <tr><td>100</td><td>&lt;thead&gt;</td><td>Cabecera de la tabla (filas de encabezado).</td><td><code>&lt;thead&gt;...&lt;/thead&gt;</code></td></tr>
+    <tr><td>101</td><td>&lt;time&gt;</td><td>Representa fecha/hora (atributo datetime).</td><td><code>&lt;time datetime="2025-09-17"&gt;17 sep 2025&lt;/time&gt;</code></td></tr>
+    <tr><td>102</td><td>&lt;title&gt;</td><td>Título del documento (pestaña del navegador).</td><td><code>&lt;title&gt;Mi sitio&lt;/title&gt;</code></td></tr>
+  </table>
+</body>
+</html>
